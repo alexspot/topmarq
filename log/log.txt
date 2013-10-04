@@ -1,0 +1,65 @@
+#######################################################
+#                    All Settings                     #
+#######################################################
+
+  add_rawler_html_log    =  false
+  add_rawler_xml_log     =  false
+  app_base_auth_login    =  
+  app_base_auth_pass     =  
+  app_host               =  www.topmarques.co.uk
+  app_protocol           =  http
+  debug_mode             =  false
+  def_test_name          =  Auto Tester
+  def_test_pass          =  mypass
+  def_test_user          =  test@test.com
+  driver                 =  selenium
+  html_log               =  log.html
+  log_dir                =  log
+  mail_pop3_domain       =  reportdrop.mailgun.org
+  mail_pop3_port         =  995
+  mail_pop3_server       =  pop.mailgun.org
+  mail_pop3_timeout      =  120
+  mail_pop3_user_name    =  postmaster@reportdrop.mailgun.org
+  mail_pop3_user_pass    =  75evvilvpvp3
+  mail_smtp_domain       =  reportdrop.mailgun.org
+  mail_smtp_port         =  25
+  mail_smtp_server       =  smtp.mailgun.org
+  mail_smtp_user_name    =  postmaster@reportdrop.mailgun.org
+  mail_smtp_user_pass    =  75evvilvpvp3
+  mailgun_api_key        =  key-48-tb8qvxke3-52sj68vr4fq5vn4rx-9
+  pjs_ignore_js_errors   =  false
+  pjs_ignore_ssl_errors  =  true
+  rawler_html_log        =  rawler_log.html
+  rawler_log             =  rawler_log.txt
+  rawler_xml_log         =  rawler_log.xml
+  required_clean_logs    =  true
+  sel_browser            =  ff
+  selenium_server_log    =  selenium-server.log
+  sl_api_key             =  some_api_key
+  sl_browser_name        =  firefox
+  sl_idle_timeout        =  180
+  sl_max_duration        =  1800
+  sl_platform            =  VISTA
+  sl_selenium_version    =  2.18.0
+  sl_url                 =  http://some_user:some_api_key@ondemand.saucelabs.com:80/wd/hub
+  sl_user                =  some_user
+  tb_api_key             =  b3f81a5af7cfa72697061432b120005b
+  tb_api_secret          =  3fdaf6c72cb046f48311ec32816314f0
+  tb_avoid_proxy         =  true
+  tb_browser_name        =  googlechrome
+  tb_browser_version     =  8
+  tb_idle_timeout        =  300
+  tb_max_duration        =  5400
+  tb_platform            =  WIN8
+  tb_record_screenshot   =  false
+  tb_selenium_version    =  2.18.0
+  tb_url                 =  http://b3f81a5af7cfa72697061432b120005b:3fdaf6c72cb046f48311ec32816314f0@hub.testingbot.com:80/wd/hub
+  timeout_medium         =  60
+  timeout_short          =  3
+  timeout_small          =  20
+  timeout_tiny           =  1
+  txt_log                =  log.txt
+
+*** Feature: SEARCH ***
+ => Scenario: Search cars by made and model
+2013/10/03 12:10:37 [INFO] :: Open MainPage page by 'http://www.topmarques.co.uk/' url

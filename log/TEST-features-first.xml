@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Search" skipped="0" tests="1" time="14.712389">
+<testcase classname="Search" name="Search cars by made and model" time="14.712389">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[[ACTION] Activate checkbox menu
+[ACTION] Set made to BMW
+[ACTION] Set model to M6
+[ACTION] Click submit button
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

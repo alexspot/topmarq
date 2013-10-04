@@ -1,0 +1,103 @@
+###########################################################
+#  COMMON SETTINGS                                        #
+###########################################################
+ debug_mode: false
+
+###########################################################
+# APPLICATION SETTINGS                                    #
+###########################################################
+ app_base_auth_login:
+ app_base_auth_pass:
+ app_protocol: http
+ app_host: www.topmarques.co.uk
+
+ def_test_user: test@test.com
+ def_test_pass: mypass
+ def_test_name: Auto Tester
+
+###########################################################
+# TEST ENVIRONMENTS SETTINGS                              #
+###########################################################
+
+ # Specify one of the following drivers: selenium, selenium_dev, webkit, poltergeist, sauce
+ driver: selenium
+
+ # -Selenium-
+ # specify one of next browsers: iexplore (ie), firefox (ff), chrome, opera
+ sel_browser: ff
+
+ # -PhantomJS-
+ # specify settings for poltergeist
+ pjs_ignore_js_errors: false
+ pjs_ignore_ssl_errors: true
+
+ # -SauceLabs-
+ sl_user: some_user
+ sl_api_key: some_api_key
+ sl_url: "http://${sl_user}:${sl_api_key}@ondemand.saucelabs.com:80/wd/hub"
+ sl_platform: :VISTA
+ sl_browser_name: firefox
+ sl_selenium_version: "2.18.0"
+ sl_max_duration: '1800'
+ sl_idle_timeout: '180'
+
+###########################################################
+# DATABASE SETTINGS                                       #
+###########################################################
+
+
+
+###########################################################
+# LOGGER SETTINGS                                         #
+###########################################################
+ log_dir: "log"
+ txt_log: log.txt
+ html_log: log.html
+ selenium_server_log: selenium-server.log
+ required_clean_logs: true
+ rawler_log: rawler_log.txt
+ add_rawler_xml_log: false
+ rawler_xml_log: rawler_log.xml
+ add_rawler_html_log: false # not implemented yet
+ rawler_html_log: rawler_log.html # not implemented yet
+
+###########################################################
+# MAIL SETTINGS                                           #
+###########################################################
+ mailgun_api_key: key-48-tb8qvxke3-52sj68vr4fq5vn4rx-9
+
+ mail_smtp_server: smtp.mailgun.org
+ mail_smtp_port: 25
+ mail_smtp_domain: reportdrop.mailgun.org
+ mail_smtp_user_name: postmaster@${mail_smtp_domain}
+ mail_smtp_user_pass: 75evvilvpvp3
+
+ mail_pop3_server: pop.mailgun.org
+ mail_pop3_port: 995
+ mail_pop3_timeout: 120
+ mail_pop3_domain: ${mail_smtp_domain}
+ mail_pop3_user_name: ${mail_smtp_user_name}
+ mail_pop3_user_pass: ${mail_smtp_user_pass}
+
+############################################################
+# TIMEOUTS                                                 #
+############################################################
+ timeout_tiny: 1
+ timeout_short: 3
+ timeout_small: 20
+ timeout_medium: 60
+
+###########################################################
+# testingbot                                              #
+###########################################################
+ tb_api_key: b3f81a5af7cfa72697061432b120005b
+ tb_api_secret: 3fdaf6c72cb046f48311ec32816314f0
+ tb_url: "http://${tb_api_key}:${tb_api_secret}@hub.testingbot.com:80/wd/hub"
+ tb_platform: :WIN8
+ tb_browser_name: googlechrome
+ tb_browser_version: 8
+ tb_selenium_version: "2.18.0"
+ tb_max_duration: '5400'
+ tb_idle_timeout: '300'
+ tb_record_screenshot: false
+ tb_avoid_proxy: true
